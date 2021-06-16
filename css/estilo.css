@@ -1,0 +1,276 @@
+* {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  border: .05rem; }
+
+p, span, a {
+  font-family: 'Open Sans', sans-serif; }
+
+body {
+  background-color: white;
+  color: #5a5a5a;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column; }
+
+h2 {
+  letter-spacing: 2px; }
+
+h3 {
+  color: #05e675; }
+
+h4 {
+  color: #05e675;
+  font-weight: 500; }
+
+.imgFluid {
+  width: 50%;
+  height: auto; }
+
+.titulo {
+  background-color: gray;
+  margin: 10px 12px auto;
+  color: white; }
+
+.sectionContacto {
+  background-color: #bff8db; }
+
+.border {
+  display: grid;
+  grid-gap: 4px; }
+
+.border {
+  display: grid;
+  grid-gap: 10px;
+  grid-area: border;
+  background-color: white;
+  margin: 20px auto;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 20px; }
+
+.text-Start {
+  text-align: start;
+  margin: 20px auto;
+  padding: 10px; }
+
+#texto {
+  z-index: 200;
+  left: 200px;
+  top: 40px;
+  text-align: center; }
+
+.alinearTexto {
+  text-align: center; }
+
+.card-body {
+  margin: 10px; }
+
+.card-body2 {
+  margin: 30px; }
+
+/*animacion
+.iconFlex{
+	display: flex;
+	justify-content: center;
+    align-content: center;
+	padding-top: 50px;
+}
+.iconModi{
+	width: 100px;
+	height: 100px;
+}
+.transition{
+	transition: all 1s;
+}
+.transition:hover{
+	transform: translateY(-20px);
+}
+input .completar{
+	display: block;
+	font-size: 20px;
+	width: 100px;
+	transition: all 1s;
+	height: 50px;
+}
+input:focus{
+	font-size: 30px;
+	width: 20%;
+}
+
+@keyframes movimiento {
+	0%{transform:translateY(-20px);}
+	50%{transform:translateX(20px);}
+	100%{transform: translate(0px, 0px);}
+} */
+/*footer*/
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 100px;
+  background-color: #111;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px; }
+
+footer .container-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+footer .container-footer .sec {
+  margin-right: 30px; }
+
+footer .container-footer .sec.aboutus {
+  width: 40%; }
+
+footer .container-footer h5 {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px; }
+
+footer .container-footer h5:before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #05e675; }
+
+footer p {
+  color: #999; }
+
+.sci {
+  margin-top: 20px;
+  display: flex; }
+
+.sci li {
+  list-style: none; }
+
+.sci li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 4px; }
+
+.sci li a:hover {
+  background: #05e675; }
+
+.sci li a .fa {
+  color: #fff;
+  font-size: 20px; }
+
+.quick-links {
+  position: relative;
+  width: 25%; }
+
+.quick-links ul li {
+  list-style: none; }
+
+.quick-links ul li a {
+  color: #999;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block; }
+
+.quick-links ul li a:hover {
+  color: #fff; }
+
+.contact {
+  width: calc(35% - 60px);
+  margin-right: 0 !important; }
+
+.contact .info {
+  position: relative; }
+
+.contact .info li {
+  display: flex;
+  margin-bottom: 16px; }
+
+.contact .info li span:nth-child(1) {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px; }
+
+.contact .info li span {
+  color: #999; }
+
+.contact .info li a {
+  color: #999;
+  text-decoration: none; }
+
+.contact .info li a:hover {
+  color: #fff; }
+
+.copyright-text {
+  width: 100%;
+  background: #111;
+  padding: 8px 100px;
+  text-align: center;
+  color: #999; }
+
+.navbar-nav li a:hover {
+  background-color: #7bfaba;
+  border-radius: 3px; }
+
+@media (max-width: 991px) {
+  footer {
+    padding: 40px; }
+  footer .container-footer {
+    flex-direction: column; }
+  footer .container-footer .sec {
+    margin-right: 0;
+    margin-bottom: 40px; }
+  footer .container-footer .sec.aboutus,
+  .quickLinks,
+  .contact {
+    width: 100%; }
+  .copyright-text {
+    padding: 8px 40px; } }
+
+/*fin de footer*/
+/* vista tablet */
+@media (min-width: 768px) {
+  .navbar body {
+    padding: 40px;
+    margin-right: 0;
+    margin-bottom: 40px;
+    width: 100%; }
+  .cardIndex {
+    margin-top: 20px;
+    padding: 50px; }
+  h5 {
+    position: relative;
+    color: #05e675;
+    font-weight: 500;
+    margin-bottom: 15px; }
+  h5:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background: #05e675; }
+  .enviar {
+    background: #36d887;
+    color: white; }
+  .navbar {
+    background: gray; }
+  .text {
+    margin-bottom: 15px; } }
