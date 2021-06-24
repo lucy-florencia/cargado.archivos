@@ -5,11 +5,9 @@
     box-sizing: border-box;
     border: .05rem;
 }
-
 p, span, a{
     font-family: 'Open Sans', sans-serif;
 }
-
 body{
     background-color: white;
     color: rgb(90, 90, 90);
@@ -29,7 +27,6 @@ h4{
     color: rgb(5, 230, 117);
     font-weight: 500;
 }
-
 .imgFluid{
     width: 50%;
     height: auto;
@@ -39,11 +36,9 @@ h4{
     margin: 10px 12px auto;
     color: white;
 }
-
 .sectionContacto{
 background-color: rgb(191, 248, 219);
 }
-
 .border{
     display: grid;
 

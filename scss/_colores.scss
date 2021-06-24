@@ -1,0 +1,91 @@
+@import "tamanios";
+
+$gris:#F4F2F4;
+$blanco:white;
+$negro:#111;
+$verde:#04F0BA;
+$verde2:#a7f7ec;
+$colortexto:gray;
+$paddingh4:10px;
+$color: #fff;
+$colorgris:#999;
+$colorlogos:#222;
+$colorLetra:grey;
+$colornav:#CCD1D1;
+
+.navbar{
+    background-color:$colornav;
+    .navbar__enlace--logo{
+        color:$negro;
+}}
+
+body{
+    background-color:$blanco;
+}
+
+p{
+    color:$colortexto;
+}
+
+.nota__titulo{
+    padding: $paddingh4;
+}
+.nota--color{
+    color:$blanco;
+}
+.nota__titulo{
+    background-color:$verde2;
+}
+
+footer{
+    background-color:$negro;
+}
+.containerF{
+    background-color:$negro;
+}
+footer .containerF h5{
+color:$color;}
+footer .containerF h5:before{
+        background:$verde;
+    }
+    footer p{
+        color:$colorgris;
+    }  
+    .sci li a{
+        background:$colorlogos;
+    }
+    .sci li a:hover{
+        background:$verde;
+    }
+    .sci li a .fa{
+        color:$color;
+    }
+    .quick-links ul li a{
+        color:$colorgris;
+    }
+    .quick-links ul li a:hover{
+         color:$color;
+    }
+    .contact .info li span:nth-child(1){
+        color: $color;
+    }
+    .contact .info li span{
+        color: $colorgris;
+    }
+    .contact .info li a{
+        color:$colorgris;
+    }
+    .contact .info li a:hover{
+         color:$color;
+    }
+    .copyright-text{
+        background:$negro;
+        color:$colorgris;
+    }
+    .navbar-nav li a:hover{
+        background-color:$verde;
+    }
+    .btn-color{
+        background-color: $verde;
+        color: $color;
+    }

@@ -1,0 +1,56 @@
+@media (max-width: 991px)
+{
+    footer{
+        padding: 40px;
+    }
+    footer .containerF{
+        flex-direction: column;
+    }
+    footer .containerF .sec{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .containerF .sec.aboutus,
+     .quickLinks,
+     .contact{
+        width: 100%;
+    }
+    .copyrightText{
+        padding: 8px 40px;
+    }
+}
+
+/*fin de footer*/
+@media only screen and (min-width: 768px){
+}
+ /* vista tablet */
+ @media only screen and (min-width:769px) and (max-width: 1100px){
+ }
+ @media (min-width: 768px)
+{
+    .navbar body{
+        padding: 40px;
+        margin-right: 0;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    .cardIndex{
+    margin-top: 20px;
+    padding: 50px;
+}
+h5{
+    position: relative;
+    color: rgb(5, 230, 117) ;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+h5:before{
+    content:'';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background: rgb(5, 230, 117);
+}
+}
