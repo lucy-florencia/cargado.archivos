@@ -5,6 +5,13 @@
     box-sizing: border-box;
     border: .05rem;
 }
+.container-fluid{
+padding: 0%;
+box-sizing: border-box;
+}
+.container{
+    padding: 0%;
+}
 p, span, a{
     font-family: 'Open Sans', sans-serif;
 }
@@ -76,6 +83,10 @@ margin: 10px;
 .card-body2{
     margin: 30px;
     }
+
+.container-fluid{
+    padding: 0%;
+}
 
 /*animacion
 .iconFlex{
@@ -239,7 +250,7 @@ footer p{
     footer{
         padding: 40px;
     }
-    footer .container-footer{
+    footer .containerF{
         flex-direction: column;
     }
     footer .container-footer .sec{

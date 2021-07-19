@@ -8,11 +8,3 @@
     background-color:$blanco;
 }
 
-@for $i from 1 to 6{
-    .nota__color:nth-child( #{$i}){
-        color: white;
-        font-size: 20px;
-        background-color: darken(#04F0BA, $i * 18%);
-        padding: 10px;
-    }
-}

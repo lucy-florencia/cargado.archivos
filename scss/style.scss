@@ -3,13 +3,582 @@
 @import "responsive";
 @import "mixins";
 
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;  
+}
 .card__diseño{
     border-radius: 1%;
     box-shadow: 5px 5px 15px #111;
     padding: 5px;
     margin-bottom: 30px;
+    transition: 0.5s;
+    top:20px;
 }
-.imagen--bordes{
-    border-radius: 6%;
-    padding: 20px;
+.card-body{
+    padding: 20px 20px;
+    margin-top: 30px;
+}
+.card-title{
+    font-family:'Merriweather', serif;;
+    letter-spacing: 1px;
+    font-weight:500;
+    font-size: 30px;
+    font-size: 2.0;
+    text-align: start;
+    color: black;
+ 
+}
+.card-title:hover{
+    color: white;
+}
+.card-text{
+    color: #111;
+}
+.card-texto-color{
+    color: #111; 
+}
+.card-title-dos{
+    font-family: 'Merriweather', serif;
+    letter-spacing: 1px;
+    font-weight:500;
+    font-size: 25px;
+    margin-top: 20 px;
+    text-align: center;
+}
+.card-title-dos {
+    text-decoration: none;
+    background-image: linear-gradient(#9059E5, #3662FF);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+.card-title-dos:hover, a:focus {
+    background-size: 100% 2px;
+}
+.card-text-dos{
+    text-align: center;
+}
+.text-center-centrar{
+    font-family: 'Merriweather', serif;
+    letter-spacing: 1px;
+    font-weight:400;
+    font-size: 25px;
+    margin-top: 20 px;
+    text-align:center;
+    color: white;
+}
+
+.card__diseño:hover{
+box-shadow: 5px 5pxm20px(#111);
+transform: translateY(-3);
+background:linear-gradient(45deg,#9059E5 10%, #3662FF 102% );
+color: white;
+}
+
+.div-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      &.hidden{
+            overflow: hidden;
+        }
+      .card-img-top{
+          display:block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;   
+          transform:scale(1);
+          -ms-transform:scale(1); // IE 9 
+          -moz-transform:scale(1); // Firefox 
+          -webkit-transform:scale(1); // Safari and Chrome 
+          -o-transform:scale(1); // Opera 
+          -webkit-transition: all 500ms ease-in-out; // IE 9
+          -moz-transition: all 500ms ease-in-out; // Firefox
+          -ms-transition: all 500ms ease-in-out; // Safari and Chrome 
+          -o-transition: all 500ms ease-in-out; // Opera       
+      }        
+      &:hover{
+         .card-img-top{
+              transform:scale(1.2);
+              -ms-transform:scale(1.2); // IE 9 
+              -moz-transform:scale(1.2); // Firefox 
+              -webkit-transform:scale(1.2); // Safari and Chrome 
+              -o-transform:scale(1.2); // Opera
+          }
+      
+      } 
+  }
+.card-iconos{
+    transition: all 2s;
+}
+.card-iconos:hover{
+	display: block;
+        transform: translateY(-3%);
+        }
+
+.navbar-nav{
+    font-size: 1.2rem;
+    padding: 0%;
+    margin: 0,4rem;
+}
+.container-fluid{
+    padding: 0%;
+}
+.especial-fotos{
+    color:black;
+    font-size: 1rem;
+    font-size: 'Merriweather', serif;
+    font-family: 400;
+}
+.text-subtitulo{
+    color: black;
+    letter-spacing: 1px;
+}
+.card-contenedor{
+    background-color:white;
+    padding: 50px 100px;
+    margin-bottom: 30px;
+}
+.card-titulo-principal{
+    color: black;
+    font-family: 'Merriweather', serif;;
+    letter-spacing: 4px;
+    font-weight:700;
+    font-size: 50px;
+}
+.card-titulo{
+    position: relative;
+    width: max-content;
+    font-family: 'Merriweather', serif;;
+    letter-spacing: 1px;
+    font-weight:100;
+}
+.card-title-seccion{
+    font-family: 'Merriweather', serif;
+    color:black; 
+    font-weight:700;
+    font-style: unset;
+    font-size: 40px;
+    text-align: center;
+}
+.card-titulo-secundario{
+    font-family: 'Merriweather', serif;
+    color:#111; 
+    font-weight:700;
+    font-style: unset;
+    font-size: 45px;
+    text-align: center;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+.btn-vm{
+    background-color: #222;
+    color: #fff;
+}
+.btn-vm:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    background-color: #fff;
+    color: black;
+}
+.btn-vmv{
+    background-color: #222;
+    color: #fff;
+}
+.btn-vmv:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    background-color:#E0B589;
+    color: white;
+    transform: translateY(-3%);
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+footer .containerF{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .containerF .sec{
+     margin-right: 30px;
+}
+footer .containerF .sec.aboutus{
+    width: 40%;
+}
+footer .containerF h5{
+ position: relative;
+ color: #fff;
+ font-weight: 500;
+ margin-bottom: 15px;
+}
+footer .containerF h5:before{
+    content:'';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: rgb(5, 230, 117);
+}
+footer p{
+    color: #999;
+}
+.sci{
+    margin-top: 20px;
+    display: flex;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.sci li a:hover{
+    background: rgb(5, 230, 117);
+}
+.sci li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+.quickLinks{
+    position: relative;
+    width: 25%;
+}
+.quickLinks ul li{
+    list-style: none;
+} 
+.quickLinks ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.quickLinks ul li a:hover{
+     color: #fff;
+}
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info{
+    position: relative;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span{
+    color: #999;
+}
+.contact .info li a{
+
+    text-decoration: none;
+}
+.contact .info li a:hover{
+     color: #fff;
+}
+.copyright-text{
+    width: 100%;
+    background: #111;;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999;
+}
+.imagen-sobreel{    
+border-radius: 10px 10px 10px 10px;
+
+/*para Safari y Chrome*/
+-webkit-border-radius: 10px 10px 10px 10px;
+}
+.card-subtitulo{
+ font-family: 'Merriweather', serif;
+ font-weight: 300 italic; 
+ font-size: 30px;
+ color: black;
+}
+.card-color{
+    font-size: 18px;
+}
+
+
+.parallax{
+    /* The image used */
+    background-image: url("../assets/img/imagen-glaciar.jpg");
+    /* Set a specific height */ 
+    height: 300px;
+    /* Create the parallax scrolling effect */ 
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;               
+  /* box modeling */
+  padding: 50px 30px;
+  margin-bottom:50px; 
+  }
+  .titulo-encabezado{
+	color: white;
+    letter-spacing: 7px;
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+
+}
+  .titulo-encabezado{
+	color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px;
+}
+.parallax2{
+    /* The image used */
+    background-image: url("../assets/img/imagen-oceano.jpg");
+    /* Set a specific height */ 
+    height: 300px;
+    /* Create the parallax scrolling effect */ 
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;               
+  /* box modeling */
+  padding: 50px 30px;
+  margin-bottom:50px; 
+  }
+  .titulo-encabezado{
+	color: white;
+    letter-spacing: 7px;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 50px;
+}
+  .titulo-encabezado{
+	color: white;
+	font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px;
+}
+.parallax3{
+    /* The image used */
+    background-image: url("../assets/img/imagen-playa.jpg");
+    /* Set a specific height */ 
+    height: 300px;
+    /* Create the parallax scrolling effect */ 
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;               
+  /* box modeling */
+  padding: 50px 30px;
+  margin-bottom:50px; 
+  }
+  .titulo-encabezado{
+	color: white;
+    letter-spacing: 7px;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 50px;
+}
+  .titulo-encabezado{
+	color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px;
+}
+.parallax4{
+    /* The image used */
+    background-image: url("../assets/img/imagen-colorado.jpg");
+    /* Set a specific height */ 
+    height: 300px;
+    /* Create the parallax scrolling effect */ 
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;               
+  /* box modeling */
+  padding: 50px 30px;
+  margin-bottom:50px; 
+  }
+  .titulo-encabezado{
+	color: white;
+    letter-spacing: 7px;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 50px;
+}
+  .titulo-encabezado{
+	color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px;
+}
+.parallax5{
+    /* The image used */
+    background-image: url("../assets/img/carduno.jpg");
+    /* Set a specific height */ 
+    height: 400px;
+    /* Create the parallax scrolling effect */ 
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;               
+  /* box modeling */
+  padding: 50px 30px;
+  margin-bottom:50px; 
+  }
+  .titulo-encabezado-centrar{
+	color: white;
+    letter-spacing: 2px;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    margin-top: -2;
+}
+  .titulo-encabezado-centrar{
+	color: white;
+    display: flex;
+    text-align: center;
+    margin: 50px;
+}
+
+
+@media (max-width: 991px)
+{
+    footer{
+        padding: 40px;
+    }
+    footer .containerF{
+        flex-direction: column;
+    }
+    footer .containerF .sec{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .containerF .sec.aboutus,
+     .quickLinks,
+     .contact{
+        width: 100%;
+    }
+    .copyright-text{
+        padding: 8px 40px;
+    }
+
+    .card-titulo-principal{
+        display: flex;
+        font-size: 25px;
+        align-content: center;
+        justify-content: center;
+    }
+    .card-subtitulo{
+        font-size: 18px;
+    }
+    .text-subtitulo{
+        font-size: 16px;
+        .car-texto{
+            font-size: 17px;
+        }
+}
+.card-contenedor{
+    background-color: #BFA589 ;
+    text-align: left;
+    padding: 20px 30px;
+    margin-top: -6px;
+}
+.titulo-encabezado{
+    font-size: 30px;
+    text-align: center; 
+}
+.card-titulo-secundario{
+    font-size: 25px;
+    text-align: center; 
+}
+.titulo-encabezado-centrar{
+    font-size: 25px;
+    margin-top: -4;
+}
+.card-title-seccion{
+    font-size: 25px;
+    text-align: center; 
+}}
+/*fin de footer*/
+@media only screen and (min-width: 768px){
+}
+ /* vista tablet */
+ @media only screen and (min-width:769px) and (max-width: 1100px){
+ }
+ @media (min-width: 768px)
+{
+    .navbar body{
+        padding: 40px;
+        margin-right: 0;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+        .card-index{
+            margin-top: 20px;
+            padding: 50px;
+}
+h5{
+    position: relative;
+    color: rgb(5, 230, 117) ;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+h5:before{
+    content:'';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background: rgb(5, 230, 117);
+}
+.enviar{
+background:rgb(54, 216, 135);
+color: white;
+}
+
+.text{
+    margin-bottom: 15px;
+}}
+
+.card-contenedor{
+    background-image:url("../assets/img/montañas7.jpg");
+    height: 700px;
+    width: 100%;
+    /* Create the parallax scrolling effect */ 
+    background-repeat: no-repeat;
+    margin: 0%;
+               
+  /* box modeling */
 }

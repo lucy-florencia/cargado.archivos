@@ -12,13 +12,18 @@ $colorgris:#999;
 $colorlogos:#222;
 $colorLetra:grey;
 $colornav:#CCD1D1;
+$colortierra:#CC9966;
 
 .navbar{
-    background-color:$colornav;
+    background-color:$color;}
     .navbar__enlace--logo{
-        color:$negro;
-}}
-
+        color:$negro;}
+        .nav-link{
+            color:$verde;
+        }
+        .nav-link:active{
+            color:$verde;
+        }
 body{
     background-color:$blanco;
 }
@@ -28,14 +33,15 @@ p{
 }
 
 .nota__titulo{
-    padding: $paddingh4;
+    padding: $negro;
 }
-.nota--color{
+.nota--color {
+    color:$colortierra;
+}
+.card-titulo-principal{
     color:$blanco;
 }
-.nota__titulo{
-    background-color:$verde2;
-}
+
 
 footer{
     background-color:$negro;
@@ -82,10 +88,15 @@ footer .containerF h5:before{
         background:$negro;
         color:$colorgris;
     }
-    .navbar-nav li a:hover{
-        background-color:$verde;
-    }
+
     .btn-color{
-        background-color: $verde;
-        color: $color;
+        background: -webkit-linear-gradient(90deg, #CC9966 10%, #04F0BA 90%);
+        background: -moz-linear-gradient(90deg, #CC9966 10%, #04F0BA 90%);
+        background: -ms-linear-gradient(90deg, #CC9966 10%, #04F0BA 90%);
+        background: -o-linear-gradient(90deg, #CC9966 10%,#04F0BA 90%);
+        background: linear-gradient(90deg, #CC9966 10%, #04F0BA 90%);
+
     }
+
+    .card-diseño a:hover{
+        background: rgb(5, 230, 117);}
